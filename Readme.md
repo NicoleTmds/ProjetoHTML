@@ -1,7 +1,7 @@
 Este projeto servirá de base para testar as funções e compreender o funcionamento e estrutura das linguagens HTML e CSS;
 
 Código padrão html com comentários: 
-# atalho: < html:5 >
+#atalho: < html:5 >
 
 <!DOCTYPE html>
 
@@ -19,10 +19,10 @@ Código padrão html com comentários:
 
 <body> (Estrutura geral do site)
 
-# Titulos são classificados pela importância do texto no site.
-# Só pode ter um h1/Titulo principal no site. Os demais titulos(h2/h3/h4...) Podem ser repetidos.
-# Atalho para conteúdo aleatório: < p>lorem >
-# Caso queira múltiplicar de forma rápida: p*"Quantidade"
+#Titulos são classificados pela importância do texto no site.
+#Só pode ter um h1/Titulo principal no site. Os demais titulos(h2/h3/h4...) Podem ser repetidos.
+#Atalho para conteúdo aleatório: < p>lorem >
+#Caso queira múltiplicar de forma rápida: p*"Quantidade"
 
 <h1>Titulo 1</h1>
 
