@@ -87,4 +87,43 @@ Adicionando imagens do próprio projeto(Dowloads):
     <img src="pasta/nome do arquivo" height="300"(altura)>
     ex: <img src="img/carro.jpg" width="300"(altura)>
 
- 
+Adicionando link às imagens(direcionamento através do click):
+<a href="nome da pasta/nome do arquivo"> <img src="pasta/nome do arquivo" height="300"(altura)></a>
+
+Criação de tabelas: 
+- (<tr> Linhas), (<th> Colunas), (<td> Dado/informação), (<width> Largura), (<border> borda), (<style> = CSS. Deixa o texto alinhado)
+ex:
+    <table width="100%" border="1"
+        style="text-align: center;"> 
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Peso</th>
+        </tr>
+        <tr>
+            <td>Dimitri</td>
+            <td>30</td>
+            <td>80 kg</td>
+        </tr>
+        <tr>
+            <td>Nicole</td>
+            <td>20</td>
+            <td>50 kg</td>
+        </tr>
+    </table>
+
+Criação de Listas não ordenadas(Não possui contagem):
+ex:
+    <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ul>
+
+Criação de Listas ordenadas(Realiza uma contagem de forma sequencial):
+ex:
+    <ol>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ol>
