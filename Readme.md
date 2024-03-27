@@ -54,3 +54,37 @@ Formatação de texto(Tags):
     <sup></sup> (Superior ex:Número exponencial)
     <sub></sub> (Inferior)
     <mark></mark> (Marcação/destaca o texto)
+    <!-- (Comentário)
+
+Como adicionar links (URL ABSOLUTA):
+    <a href="url do site">Mensagem que vai aparecer na tela</a>
+    ex: <a href="Google.com">Ir para o site</a>
+
+Para o link ser aberto em uma nova aba inserir o <target="_blank">
+    ex: <a href="Google.com" target="_blank">Ir para o site</a>
+
+Como direcionar o usuário para uma página/arquivo dentro do próprio projeto:
+    <a href="nome do arquivo">Mensagem que vai aparecer na tela</a>
+    ex: <a href="sobre.html">Sobre nós</a>
+    
+(Inverso):
+    ex: <a href="index.html">Voltar para a página inicial</a>
+    
+Como navegar entre páginas/arquivos dentro de pastas:
+    <a href="nome da pasta/nome do arquivo">Mensagem que vai aparecer na tela</a>
+    ex: <a href="equipe/dimitri.html">Dimitri</a>
+    
+(Inverso): Se somente colocarmos o nome do arquivo ex:index.html, ele vai ser procurado dentro da pasta em que estamos ex:equipe. Portanto é preciso adicionar o <../>, para voltar uma pasta atrás.
+    ex: <a href="../index.html">Voltar para principal</a>
+Caso precise voltar duas pastas:
+    ex: <a href="../../index.html">Voltar para principal</a>
+E assim por diante.
+
+Adicionando imagens da internet:
+    <img src="url da imagem" width="xxx"(largura) height="xxx"(altura) alt=Descrição da imagem(Para pessoas com deficiência)>
+
+Adicionando imagens do próprio projeto(Dowloads):
+    <img src="pasta/nome do arquivo" height="300"(altura)>
+    ex: <img src="img/carro.jpg" width="300"(altura)>
+
+ 
