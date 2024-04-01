@@ -58,34 +58,42 @@ Formatação de texto(Tags):
 
 Como adicionar links (URL ABSOLUTA):
     <a href="url do site">Mensagem que vai aparecer na tela</a>
-    ex: <a href="Google.com">Ir para o site</a>
+        ex: <a href="Google.com">Ir para o site</a>
 
 Para o link ser aberto em uma nova aba inserir o <target="_blank">
     ex: <a href="Google.com" target="_blank">Ir para o site</a>
 
 Como direcionar o usuário para uma página/arquivo dentro do próprio projeto:
     <a href="nome do arquivo">Mensagem que vai aparecer na tela</a>
-    ex: <a href="sobre.html">Sobre nós</a>
+        ex: <a href="sobre.html">Sobre nós</a>
     
 (Inverso):
     ex: <a href="index.html">Voltar para a página inicial</a>
     
 Como navegar entre páginas/arquivos dentro de pastas:
     <a href="nome da pasta/nome do arquivo">Mensagem que vai aparecer na tela</a>
-    ex: <a href="equipe/dimitri.html">Dimitri</a>
-    
+        ex: <a href="equipe/dimitri.html">Dimitri</a>
+
 (Inverso): Se somente colocarmos o nome do arquivo ex:index.html, ele vai ser procurado dentro da pasta em que estamos ex:equipe. Portanto é preciso adicionar o <../>, para voltar uma pasta atrás.
     ex: <a href="../index.html">Voltar para principal</a>
 Caso precise voltar duas pastas:
     ex: <a href="../../index.html">Voltar para principal</a>
 E assim por diante.
 
+Como direcionar o usuário para um iframe:
+    1. Cria um iframe vazio:
+       <iframe> width=100% style="border:none;" src="" name="meu-iframe" title = "Iframe de exemplo"</iframe>
+   
+    2. Cria uma conexão entre os arquivos que você quer alocar e o novo iframe vázio
+        <a href="nome da pasta/nome do arquivo" target="nome do iframe">Mensagem que vai aparecer na tela</a>
+            ex: <a href="sobre.html" target="meu-iframe">Sobre nós</a>
+    
 Adicionando imagens da internet:
     <img src="url da imagem" width="xxx"(largura) height="xxx"(altura) alt=Descrição da imagem(Para pessoas com deficiência)>
 
 Adicionando imagens do próprio projeto(Dowloads):
     <img src="pasta/nome do arquivo" height="300"(altura)>
-    ex: <img src="img/carro.jpg" width="300"(altura)>
+        ex: <img src="img/carro.jpg" width="300"(altura)>
 
 Adicionando link às imagens(direcionamento através do click):
 <a href="nome da pasta/nome do arquivo"> <img src="pasta/nome do arquivo" height="300"(altura)></a>
@@ -127,3 +135,13 @@ ex:
         <li>Feijão</li>
         <li>Macarrão</li>
     </ol>
+
+Criação de iframes(páginas dentro de páginas) usando arquivos do próprio projeto:
+    <iframe>src="nome da pasta/nome do arquivo" width="" height="" title = "Meu iframe"</iframe>
+        ex: <iframe>src="equipe/dimitri.html" width="100%" height="100%" title = "Meu iframe"</iframe>
+
+Criação de iframes utilizando links externos:
+    <iframe>style="border:none;" src="link/url do site" width="" height="" title = "Meu iframe"</iframe>
+
+Formulários(entrada de dados/interação com o usuário):
+    
