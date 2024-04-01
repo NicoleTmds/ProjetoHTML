@@ -144,4 +144,87 @@ Criação de iframes utilizando links externos:
     <iframe>style="border:none;" src="link/url do site" width="" height="" title = "Meu iframe"</iframe>
 
 Formulários(entrada de dados/interação com o usuário):
-    
+    form = indica que o trecho abaixo é um formulário;
+    label = Nome que aparece do lado da caixa de mensagem;
+    input = função que permite a entrada de dados;
+    type = identifica o tipo de dado que o usuário vai inserir;
+    required = Torna os campos obrigatórios;
+    action = lugar de envio do formulário / metod = método utilizado (parte de back)
+
+Caixa de entrada:
+ex:
+    <form action="arquivo.php" metod="get">
+        <!--LEGENDA PARA NOME-->
+        <label for="campo_nome">Nome:</label>
+        <!--CAMPO INPUT DO TYPE TEXT-->
+        <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+        <br><br>
+        <!--LEGENDA PARA EMAIL-->
+        <label for="campo_email">E-mail:</label>
+        <!--CAMPO INPUT DO TYPE EMAIL-->
+        <input id="campo_email" type="email" placeholder="Digite seu e-mail" required>
+        <br><br>
+        <!--LEGENDA PARA SENHA-->
+        <label for="campo_senha">Senha:</label>
+        <!--CAMPO INPUT DO TYPE PASSWORD-->
+        <input id="campo_senha" type="password" placeholder="Digite sua senha" required>
+        <br><br>
+        <!--CAMPO INPUT DO TYPE SUBMIT-->
+        <input type="submit" value="Enviar Formulário"><br><br>
+    </form>
+
+Caixa de escolha única:
+ex:
+    <form>
+        <h2>Animal de estimação</h2>
+        <input type="radio" id="dog"name="animal" value="Cachorro">
+        <label for="dog">Cachorro</label>
+         <br><br>
+        <input type="radio" id="cat"name="animal" value="Gato">
+        <label for="cat">Gato</label>
+        <br><br>
+        <input type="radio" id="bird"name="animal" value="Passarinho">
+        <label for="bird">Passarinho</label>
+        <!--CAMPO INPUT DO TYPE SUBMIT-->
+        <input type="submit" value="Enviar Formulário"><br><br>
+    </form>
+
+Caixa com múltiplas escolhas:
+ex:
+    <form>
+        <h2>O que você tem em casa? </h2>
+        <input type="checkbox" name="item1" id="item1" value = TV>
+        <label for="item1">TV</label><br><br>
+        <input type="checkbox" name="item2" id="item2" value = Geladeira>
+        <label for="item2">Geladeira</label><br><br>
+        <input type="checkbox" name="item3" id="item3" value = Computador>
+        <label for="item3">Computador</label><br><br>
+        <!--CAMPO INPUT DO TYPE SUBMIT-->
+        <input type="submit" value="Enviar Formulário"><br><br>
+    </form>
+
+Caixa de opções:    
+ex:
+    <form>
+        <h2>Escolha uma cor:</h2>
+        <select>
+            <option selected disabled="">Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="rosa">Rosa</option>
+            <option value="azul">Azul</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="verde">Verde</option>
+        </select><br><br>
+        <input type="submit" value="Enviar Formulário"><br><br>
+        <button>Clique aqui</button>
+    </form>
+
+Caixa de texto grande:
+ex:
+    <form>
+        <h2>Digite sua mensagem:</h2>
+        <textarea name="mensagem" placeholder="Digite aqui sua mensagem..." rows="15" cols="55"></textarea><br><br>
+        <!--CAMPO INPUT DO TYPE SUBMIT-->
+        <input type="submit" value="Enviar Formulário"><br><br>
+        <button>Clique aqui</button>
+    </form><br>
