@@ -228,3 +228,28 @@ ex:
         <input type="submit" value="Enviar Formulário"><br><br>
         <button>Clique aqui</button>
     </form><br>
+
+Adicionando áudios:
+ex:    
+    <audio controls controlslist="nodowload">
+        <source src="link ou nome da pasta/arquivo" type="audio/formato do audio">
+    </audio>
+
+#formatos de áudios:
+mp3=mpeg
+ogg=ogg
+wav=wav
+
+#controlslist="nodowload" = não permite fácil acesso para dowload que alguns navegadores mostram na tela.
+
+Adicionando vídeos:
+ex:
+    <video poster="url ou pasta/arquivo da img" width="xx%" autoplay controls controlsList="nodownload">
+        <source src="url ou pasta/arquivo" type="video/formato do video(mp4)">
+    </video>
+
+#poster = Adiciona uma imagem de thumbnail.
+#autoplay = Começa a tocar o vídeo assim que o usuário abre a página.
+#controlsList="nodownload" > Desabilita o controle de download.
+#disablepictureinpicture = Desabilita o mais opções(3 pontinhos) do vídeo.
+#Caso queira pegar vídeo do youtube, usar a opçao iframe.
